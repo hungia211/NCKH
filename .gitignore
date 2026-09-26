@@ -5,3 +5,8 @@ tmp/
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+phases/phase1_data_exploration/.artifact_tool/
+*.xlsx.inspect.ndjson
+
+legacy_ecg/data/
+legacy_ecg/outputs/

@@ -1,4 +1,2 @@
-matplotlib
-numpy
-pandas
-wfdb
+# Các thư viện Python sẽ được bổ sung khi pipeline HOSP được xây dựng.
+# Không giữ wfdb vì hướng ECG không còn là đề tài hiện tại.
