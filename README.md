@@ -19,6 +19,20 @@ Thư mục HOSP được xác nhận trong workspace hiện tại: `D:\UIT_thu\N
 
 ## Tình trạng
 
-Đang ở giai đoạn chuẩn bị và data exploration. Chưa có cohort, early-admission window, bộ đặc trưng lab, tập nhãn Phecode hoặc mô hình cuối được chốt. Không tự chọn các ngưỡng này trước khi khảo sát dữ liệu.
+Đang ở Giai đoạn 1 — Data Exploration. Đã hoàn tất **6/7 task**: inventory HOSP, kiểm tra khóa/liên kết, khảo sát `labevents`, khảo sát `diagnoses_icd`, khảo sát thời gian và tổng hợp chất lượng/leakage. Mở [trạng thái Phase 1](phases/phase1_data_exploration/STATUS.md) để xem task đã làm, task tiếp theo và vị trí báo cáo.
+
+Chưa có cohort, early-admission window, bộ đặc trưng lab, tập nhãn Phecode hoặc mô hình cuối được chốt. Không tự chọn các ngưỡng này trước khi khảo sát dữ liệu.
+
+## Cấu trúc cần quan tâm
+
+| Thư mục | Nội dung |
+| --- | --- |
+| `research_context/` | Bối cảnh, nguyên tắc và trạng thái chung của nghiên cứu. |
+| `phases/` | Mã nguồn, kết quả và báo cáo được quản lý theo từng giai đoạn và task. |
+| `data/hosp/` | Dữ liệu MIMIC-IV gốc, chỉ đọc. |
+| `data/processed/` | Dữ liệu dẫn xuất; không dùng thay dữ liệu gốc. |
+| `docs/` | Báo cáo khảo sát cũ còn giá trị tham khảo. |
+| `legacy_ecg/` | Mã và tài liệu ECG cũ, không thuộc pipeline hiện tại. |
+| `tmp/` | File làm việc kỹ thuật; không phải đầu ra nghiên cứu chính. |
 
 Mã nguồn và tài liệu của đề tài ECG trước đây được lưu ở `legacy_ecg/` để tham khảo lịch sử; chúng không thuộc pipeline hiện tại.

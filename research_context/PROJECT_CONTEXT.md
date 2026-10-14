@@ -607,3 +607,11 @@ và cũng không phải:
 **Laboratory abnormality → Disease causation**
 
 Mọi quyết định trong quá trình xử lý dữ liệu và xây dựng mô hình cần phục vụ research question này.
+
+---
+
+# 19. Hướng mở rộng longitudinal
+
+Sau khi hoàn thành pipeline admission-level và baseline, nghiên cứu có thể mở rộng sang dự đoán theo lịch sử nhiều admission. Khi bệnh nhân bắt đầu một admission mới và đã có xét nghiệm giai đoạn sớm, mô hình kết hợp các xét nghiệm hiện tại với lịch sử các admission trước để dự đoán các phenotype được ghi nhận cho admission mới.
+
+Hướng này không thay thế mục tiêu chính và không dự đoán trước khi admission mới xảy ra. Chi tiết, giới hạn và các quyết định còn mở được quản lý tại `LONGITUDINAL_EXTENSION.md`.

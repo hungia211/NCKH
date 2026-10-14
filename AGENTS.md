@@ -7,7 +7,11 @@ Trước mọi task về nghiên cứu hiện tại, đọc theo thứ tự:
 3. `research_context/AGENT_GUIDE.md`
 4. `research_context/ROADMAP.md`
 
-Khi làm Giai đoạn 1, đọc thêm `phases/phase1_data_exploration/README.md` và cập nhật task, script, báo cáo, output trong thư mục đó.
+Khi task liên quan đến modeling, so sánh mô hình hoặc lịch sử nhiều lần nhập viện, đọc thêm `research_context/LONGITUDINAL_EXTENSION.md`. Đây là hướng mở rộng sau baseline admission-level, không thay thế pipeline chính.
+
+Khi làm Giai đoạn 1, đọc thêm `phases/phase1_data_exploration/README.md` và `phases/phase1_data_exploration/STATUS.md`; cập nhật task, script, báo cáo và output trong thư mục task tương ứng.
+
+Khi làm Giai đoạn 2, đọc thêm `phases/phase2_cohort_definition/README.md`, `TASK_BREAKDOWN.md`, `STATUS.md` và `DECISION_LOG.md`. Không chạy bước tạo cohort trước khi các quyết định bắt buộc trong Task 3 được ghi là đã chốt.
 
 Đề tài hiện tại là dự đoán **multi-label disease phenotypes** từ dữ liệu xét nghiệm giai đoạn sớm của một hospital admission trong MIMIC-IV v3.1 HOSP. Đơn vị phân tích là `hadm_id`; chia tập theo `subject_id`.
 

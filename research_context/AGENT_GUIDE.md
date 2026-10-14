@@ -17,10 +17,13 @@
 - Không mặc định dùng 6, 12 hoặc 24 giờ; phải khảo sát và báo cáo kết quả.
 - Không tự chọn một bệnh duy nhất; target chính là multi-label disease phenotypes.
 - Không diễn giải association hoặc SHAP contribution thành quan hệ nhân quả.
+- Khi dùng lịch sử nhiều admission, với admission mục tiêu chỉ được dùng các admission trước và xét nghiệm giai đoạn sớm của admission mục tiêu; không dùng diagnosis mục tiêu hoặc dữ liệu tương lai làm feature. Chi tiết tại `LONGITUDINAL_EXTENSION.md`.
 
 ## Báo cáo kết quả
 
 Mỗi task cần nêu: mục đích, file/script thay đổi, input/output, số lượng trước/sau, phát hiện chính, rủi ro, quyết định còn chờ và cách chạy lại.
+
+Tên file báo cáo phải kèm mã task để người đọc nhận biết ngay nội dung, theo mẫu `REPORT_taskNN.md` và `REPORT_taskNN.docx` (ví dụ `REPORT_task05.md`). Quy ước này áp dụng cho toàn bộ báo cáo; khi đổi tên phải cập nhật cả script tạo báo cáo và các đường dẫn tài liệu liên quan.
 
 ## Tạo file
 

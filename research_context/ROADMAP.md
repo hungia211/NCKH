@@ -10,6 +10,8 @@ Task, script và kết quả được quản lý tại `../phases/phase1_data_ex
 
 Xác định admission đủ điều kiện, admission có lab và diagnosis, early-admission window, inclusion/exclusion criteria. Ghi lại mọi rule.
 
+Kế hoạch, trạng thái và decision log được quản lý tại `../phases/phase2_cohort_definition/`.
+
 ## Giai đoạn 3 — Laboratory features
 
 Kiểm tra itemid và đơn vị, xử lý missing/outlier, khảo sát aggregation, chuyển long → wide theo `hadm_id`.
@@ -29,3 +31,9 @@ Có baseline trước, sau đó so sánh các mô hình multi-label phù hợp v
 ## Giai đoạn 7 — Evaluation and explainability
 
 Dùng F1, AUROC, AUPRC và phân tích per-label; SHAP/feature importance chỉ được diễn giải là đóng góp vào dự đoán.
+
+## Hướng mở rộng sau pipeline chính — Longitudinal multi-admission
+
+Sau khi hoàn thành baseline admission-level, có thể so sánh với mô hình sử dụng lịch sử các admission trước cùng xét nghiệm giai đoạn sớm của admission mục tiêu để dự đoán phenotype của admission mục tiêu.
+
+Hướng mở rộng này chưa thay đổi kế hoạch Phase 1–7. Thiết kế chi tiết được lưu tại [`LONGITUDINAL_EXTENSION.md`](LONGITUDINAL_EXTENSION.md).
